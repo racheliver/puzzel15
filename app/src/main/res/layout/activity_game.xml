@@ -1,0 +1,301 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:background="@color/backgroundColor"
+    tools:context=".GameActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:layout_marginBottom="10dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/txvMovesID"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="6dp"
+            android:layout_marginBottom="5dp"
+            android:layout_weight="1"
+            android:text="Moves: "
+            android:textColor="@color/tilesBackground"
+            android:textSize="22dp"
+            app:fontFamily="sans-serif" />
+
+        <TextView
+            android:id="@+id/txvTimeID"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:layout_weight="1"
+            android:text="Time: "
+            android:textColor="@color/tilesBackground"
+            android:textSize="22dp"
+            app:fontFamily="sans-serif" />
+    </LinearLayout>
+
+
+    <TableLayout
+        android:id="@+id/tableID"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="10dp"
+        android:gravity="center">
+
+        <TableRow android:layout_marginBottom="3dp">
+
+            <TextView
+                android:id="@+id/txv1ID"
+                android:layout_width="20dp"
+                android:layout_height="90dp"
+                android:layout_marginRight="3dp"
+                android:layout_weight="10"
+                android:background="@drawable/radius"
+                android:gravity="center"
+                android:tag="(0,0)"
+                android:text="1"
+                android:textColor="@color/backgroundColor"
+                android:textSize="20dp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/txv2ID"
+                android:layout_width="20dp"
+                android:layout_height="90dp"
+                android:layout_marginRight="1.5dp"
+                android:layout_weight="10"
+                android:background="@drawable/radius"
+                android:gravity="center"
+                android:tag="(0,1)"
+                android:text="2"
+                android:textColor="@color/backgroundColor"
+                android:textSize="20dp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/txv3ID"
+                android:layout_width="20dp"
+                android:layout_height="90dp"
+                android:layout_marginLeft="1.5dp"
+                android:layout_marginRight="3dp"
+                android:layout_weight="10"
+                android:background="@drawable/radius"
+                android:gravity="center"
+                android:tag="(0,2)"
+                android:text="3"
+                android:textColor="@color/backgroundColor"
+                android:textSize="20dp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/txv4ID"
+                android:layout_width="20dp"
+                android:layout_height="90dp"
+                android:layout_weight="10"
+                android:background="@drawable/radius"
+                android:gravity="center"
+                android:tag="(0,3)"
+                android:text="4"
+                android:textColor="@color/backgroundColor"
+                android:textSize="20dp"
+                android:textStyle="bold" />
+        </TableRow>
+
+        <TableRow android:layout_marginBottom="3dp">
+
+            <TextView
+                android:id="@+id/txv5ID"
+                android:layout_width="20dp"
+                android:layout_height="90dp"
+                android:layout_marginRight="3dp"
+                android:layout_weight="1"
+                android:background="@drawable/radius"
+                android:gravity="center"
+                android:tag="(1,0)"
+                android:text="5"
+                android:textColor="@color/backgroundColor"
+                android:textSize="20dp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/txv6ID"
+                android:layout_width="20dp"
+                android:layout_height="90dp"
+                android:layout_marginRight="1.5dp"
+                android:layout_weight="1"
+                android:background="@drawable/radius"
+                android:gravity="center"
+                android:tag="(1,1)"
+                android:text="6"
+                android:textColor="@color/backgroundColor"
+                android:textSize="20dp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/txv7ID"
+                android:layout_width="20dp"
+                android:layout_height="90dp"
+                android:layout_marginLeft="1.5dp"
+                android:layout_marginRight="3dp"
+                android:layout_weight="1"
+                android:background="@drawable/radius"
+                android:gravity="center"
+                android:tag="(1,2)"
+                android:text="7"
+                android:textColor="@color/backgroundColor"
+                android:textSize="20dp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/txv8ID"
+                android:layout_width="20dp"
+                android:layout_height="90dp"
+                android:layout_weight="1"
+                android:background="@drawable/radius"
+                android:gravity="center"
+                android:tag="(1,3)"
+                android:text="8"
+                android:textColor="@color/backgroundColor"
+                android:textSize="20dp"
+                android:textStyle="bold" />
+        </TableRow>
+
+        <TableRow android:layout_marginBottom="3dp">
+
+            <TextView
+                android:id="@+id/txv9ID"
+                android:layout_width="20dp"
+                android:layout_height="90dp"
+                android:layout_marginRight="3dp"
+                android:layout_weight="1"
+                android:background="@drawable/radius"
+                android:gravity="center"
+                android:tag="(2,0)"
+                android:text="9"
+                android:textColor="@color/backgroundColor"
+                android:textSize="20dp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/txv10ID"
+                android:layout_width="20dp"
+                android:layout_height="90dp"
+                android:layout_marginRight="1.5dp"
+                android:layout_weight="1"
+                android:background="@drawable/radius"
+                android:gravity="center"
+                android:tag="(2,1)"
+                android:text="10"
+                android:textColor="@color/backgroundColor"
+                android:textSize="20dp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/txv11ID"
+                android:layout_width="20dp"
+                android:layout_height="90dp"
+                android:layout_marginLeft="1.5dp"
+                android:layout_marginRight="3dp"
+                android:layout_weight="1"
+                android:background="@drawable/radius"
+                android:gravity="center"
+                android:tag="(2,2)"
+                android:text="11"
+                android:textColor="@color/backgroundColor"
+                android:textSize="20dp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/txv12ID"
+                android:layout_width="20dp"
+                android:layout_height="90dp"
+                android:layout_weight="1"
+                android:background="@drawable/radius"
+                android:gravity="center"
+                android:tag="(2,3)"
+                android:text="12"
+                android:textColor="@color/backgroundColor"
+                android:textSize="20dp"
+                android:textStyle="bold" />
+        </TableRow>
+
+        <TableRow>
+
+            <TextView
+                android:id="@+id/txv13ID"
+                android:layout_width="20dp"
+                android:layout_height="90dp"
+                android:layout_marginRight="3dp"
+                android:layout_weight="1"
+                android:background="@drawable/radius"
+                android:gravity="center"
+                android:tag="(3,0)"
+                android:text="13"
+                android:textColor="@color/backgroundColor"
+                android:textSize="20dp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/txv14ID"
+                android:layout_width="20dp"
+                android:layout_height="90dp"
+                android:layout_marginRight="1.5dp"
+                android:layout_weight="1"
+                android:background="@drawable/radius"
+                android:gravity="center"
+                android:tag="(3,1)"
+                android:text="14"
+                android:textColor="@color/backgroundColor"
+                android:textSize="20dp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/txv15ID"
+                android:layout_width="20dp"
+                android:layout_height="90dp"
+                android:layout_marginLeft="1.5dp"
+                android:layout_marginRight="3dp"
+                android:layout_weight="1"
+                android:background="@drawable/radius"
+                android:gravity="center"
+                android:tag="(3,2)"
+                android:text="15"
+                android:textColor="@color/backgroundColor"
+                android:textSize="20dp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/txv16ID"
+                android:layout_width="20dp"
+                android:layout_height="90dp"
+                android:layout_weight="1"
+                android:background="@drawable/radius2"
+                android:gravity="center"
+                android:tag="(3,3)"
+                android:text=" "
+                android:textColor="@color/backgroundColor"
+                android:textSize="20dp"
+                android:textStyle="bold" />
+
+        </TableRow>
+
+    </TableLayout>
+
+    <Button
+        android:id="@+id/btnStartID"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/btn_radius"
+        android:text="Start New Game"
+        android:textColor="@color/tilesBackground"
+        android:textSize="16dp" />
+</LinearLayout>
+
